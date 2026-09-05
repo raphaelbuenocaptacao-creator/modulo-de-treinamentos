@@ -1,1 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Capta Academy — treinamento prático de captação, abordagem, qualificação e performance." />
+  <title>Capta Academy</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Capta Academy">
+        <span class="brand-mark">C</span>
+        <span><strong>CAPTA</strong><small>ACADEMY</small></span>
+      </a>
+      <div class="top-actions">
+        <button id="installBtn" class="ghost-btn" hidden>Instalar</button>
+        <button id="profileBtn" class="avatar-btn" aria-label="Perfil">RB</button>
+      </div>
+    </header>
 
+    <main id="app" class="content" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="Navegação principal">
+      <a href="#home" data-nav="home"><span>⌂</span><small>Início</small></a>
+      <a href="#trilhas" data-nav="trilhas"><span>▤</span><small>Trilhas</small></a>
+      <a href="#simulador" data-nav="simulador"><span>⚡</span><small>Simular</small></a>
+      <a href="#ranking" data-nav="ranking"><span>🏆</span><small>Ranking</small></a>
+      <a href="#perfil" data-nav="perfil"><span>●</span><small>Perfil</small></a>
+    </nav>
+  </div>
+
+  <dialog id="nameDialog" class="dialog-card">
+    <form method="dialog" id="nameForm">
+      <div class="brand-mark big">C</div>
+      <h2>Bem-vindo à Capta Academy</h2>
+      <p>Informe seu nome para personalizar seu treinamento.</p>
+      <label>Seu nome
+        <input id="nameInput" required maxlength="40" placeholder="Ex.: Raphael" autocomplete="name" />
+      </label>
+      <button class="primary-btn" value="ok">Começar treinamento</button>
+    </form>
+  </dialog>
+
+  <dialog id="quizDialog" class="dialog-card quiz-dialog">
+    <div id="quizContent"></div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
