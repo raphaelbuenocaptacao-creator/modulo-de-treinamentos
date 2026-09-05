@@ -1,7 +1,8 @@
 {
+  "id": "capta-academy",
   "name": "Capta Academy",
   "short_name": "Capta Academy",
-  "description": "Treinamento de captação, abordagem, qualificação, objeções e performance.",
+  "description": "Universidade interna de treinamento para Captadores, Liners e Closers, com XP, ranking e certificados.",
   "start_url": "./#home",
   "scope": "./",
   "display": "standalone",
