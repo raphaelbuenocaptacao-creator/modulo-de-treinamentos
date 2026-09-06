@@ -1,7 +1,7 @@
 (()=>{
   if(!('serviceWorker' in navigator)||!window.isSecureContext)return;
   window.addEventListener('load',()=>{
-    navigator.serviceWorker.register('sw.js?v=4-raster-safe-shell',{updateViaCache:'none'})
+    navigator.serviceWorker.register('sw.js?v=5-raster-safe-shell',{updateViaCache:'none'})
       .then(registration=>registration.update())
       .catch(()=>{});
   });
